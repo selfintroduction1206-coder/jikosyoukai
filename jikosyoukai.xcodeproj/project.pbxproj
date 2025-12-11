@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1887DA152EE34EF100F52C74 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1887DA142EE34EF100F52C74 /* FirebaseAuth */; };
+		1887DA172EE34EF100F52C74 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1887DA162EE34EF100F52C74 /* FirebaseFirestore */; };
+		1887DA332EE5EC7200F52C74 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1887DA322EE5EC7200F52C74 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1887D9F12EE3430E00F52C74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +35,30 @@
 		1887D9FA2EE3430E00F52C74 /* jikosyoukaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jikosyoukaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1887DA112EE34D9300F52C74 /* Exceptions for "jikosyoukai" folder in "jikosyoukaiTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 1887D9EF2EE3430E00F52C74 /* jikosyoukaiTests */;
+		};
+		1887DA122EE34D9300F52C74 /* Exceptions for "jikosyoukai" folder in "jikosyoukaiUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 1887D9F92EE3430E00F52C74 /* jikosyoukaiUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1887D9E52EE3430B00F52C74 /* jikosyoukai */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1887DA112EE34D9300F52C74 /* Exceptions for "jikosyoukai" folder in "jikosyoukaiTests" target */,
+				1887DA122EE34D9300F52C74 /* Exceptions for "jikosyoukai" folder in "jikosyoukaiUITests" target */,
+			);
 			path = jikosyoukai;
 			sourceTree = "<group>";
 		};
@@ -52,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1887DA152EE34EF100F52C74 /* FirebaseAuth in Frameworks */,
+				1887DA172EE34EF100F52C74 /* FirebaseFirestore in Frameworks */,
+				1887DA332EE5EC7200F52C74 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,7 @@
 				1887D9E52EE3430B00F52C74 /* jikosyoukai */,
 				1887D9F32EE3430E00F52C74 /* jikosyoukaiTests */,
 				1887D9FD2EE3430E00F52C74 /* jikosyoukaiUITests */,
+				1887DA312EE5EC7200F52C74 /* Frameworks */,
 				1887D9E42EE3430B00F52C74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +121,13 @@
 				1887D9FA2EE3430E00F52C74 /* jikosyoukaiUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1887DA312EE5EC7200F52C74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +150,9 @@
 			);
 			name = jikosyoukai;
 			packageProductDependencies = (
+				1887DA142EE34EF100F52C74 /* FirebaseAuth */,
+				1887DA162EE34EF100F52C74 /* FirebaseFirestore */,
+				1887DA322EE5EC7200F52C74 /* FirebaseStorage */,
 			);
 			productName = jikosyoukai;
 			productReference = 1887D9E32EE3430B00F52C74 /* jikosyoukai.app */;
@@ -195,6 +236,9 @@
 			);
 			mainGroup = 1887D9DA2EE3430B00F52C74;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1887DA132EE34EF100F52C74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1887D9E42EE3430B00F52C74 /* Products */;
 			projectDirPath = "";
@@ -578,6 +622,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1887DA132EE34EF100F52C74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1887DA142EE34EF100F52C74 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1887DA132EE34EF100F52C74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1887DA162EE34EF100F52C74 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1887DA132EE34EF100F52C74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		1887DA322EE5EC7200F52C74 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1887DA132EE34EF100F52C74 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1887D9DB2EE3430B00F52C74 /* Project object */;
 }
